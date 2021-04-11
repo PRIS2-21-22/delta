@@ -1,6 +1,7 @@
 
 class borroso:
     def __init__(self,m,alpha,beta):
+        """Constructor del borroso"""
         self.m=m
         self.alpha = alpha
         self.beta = beta
@@ -55,6 +56,7 @@ class borroso:
         return borroso(m, alpha, beta)
 
     def __str__(self):
+        """To String del borroso"""
         return "M: {},Alpha: {}, Beta: {}".format(self.m, self.alpha, self.beta)
 
 borr1 = borroso(m=0,alpha=1,beta=2)
